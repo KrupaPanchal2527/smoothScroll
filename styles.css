@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
+
+html {
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  margin: 0;
+  font-family: "Baloo Tammudu 2", cursive;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+  letter-spacing: 9px;
+}
+
+.home {
+  height: 100vh;
+  background-color: #1e2d4c;
+  text-align: center;
+}
+
+.navList {
+  padding-top: 17px;
+}
+
+.navItem {
+  display: inline;
+  color: white;
+  padding: 20px 20px 0px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  animation-name: hoverUnderline;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.movie {
+  background-color: #4e58bc;
+}
+.tvShows {
+  background-color: #fda99b;
+}
+.docs {
+  background-color: #fec438;
+}
+.recomm {
+  background-color: #9edff2;
+}
+
+@keyframes hoverUnderline {
+  from {
+    border-bottom: 0px solid white;
+    background-color: inherit;
+  }
+  to {
+    border-bottom: 1px solid red;
+    background-color: red;
+  }
+}
